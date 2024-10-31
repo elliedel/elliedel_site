@@ -1,6 +1,6 @@
 .contacts {
     padding: 20px 0;
-    text-align: center; /* Center the text in the contacts section */
+    text-align: center; 
 }
 
 .contacts h2 {
@@ -13,20 +13,20 @@
 }
 
 .social {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow wrapping if necessary */
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact-methods ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Use flexbox for the list */
-    justify-content: center; /* Center the list items */
+    display: flex; 
+    justify-content: center;
 }
 
 .contact-methods li {
-    margin: 0 15px; /* Space between icons */
+    margin: 0 15px
 }
 
 .contact-methods a {
@@ -48,3 +48,4 @@
     margin-top: 20px;
     text-align: center; /* Center the location text */
 }
+

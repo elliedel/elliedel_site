@@ -91,6 +91,29 @@
     cursor: pointer;
 }
 
+/* Extra small screen (iPhone SE and smaller) */
+@media (max-width: 400px) {
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card1 h2 {
+        font-size: 28px;
+    }
+}
+
 /* Tablet layout (screen width 768px and up) */
 @media (min-width: 768px) {
     .project-cards {
