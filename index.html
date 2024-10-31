@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elliedel</title>
+    <link rel="icon" type="image/svg" href="./imgs/favicon.svg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Metal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-nav">
+            <a class="scroll-link logo" data-target="#hero">ELLIEDEL</a>
+        </div>
+        <div class="right-nav">
+            <a class="scroll-link" data-target="#about-me">About</a>
+            <a class="scroll-link" data-target="#projects">Projects</a>
+            <a class="scroll-link" data-target="#contacts">Contact</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="content hero xpadding" id="hero">
+            <div class="hero-container hi">
+                <h2 class="slide-in">Hello, I'm Ellie!</h2>
+            </div>
+            <div class="hero-container desc">
+                <div class="pdesc">
+                    <p>Fourth year Computer Science Student with experience in web development, passionate about leveraging data to drive insights and solutions.</p>
+                </div>
+                <div class="cta">
+                    <p><a class="scroll-link" data-target="#about-me">Learn More</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content about-me" id="about-me">
+            <div class="about-container about-desc">
+                <h2>About Me</h2>
+                <p>Hello again! I am Ellaine Dela Cruz, a fourth-year student pursuing a Bachelor's Degree in Computer Science at Our Lady of Fatima University in Quezon City.</p>
+                <p>My academic journey has equipped me with experience in backend development, and I have worked on full-stack web development projects through my university coursework.I am currently focused on expanding my knowledge in data science and machine learning.</p>
+                <p>I primarily use Django and Flask for web development, along with PostgreSQL for database management. Additionally, I leverage tools such as SQL, Pandas, and Excel for data transformation and analysis, allowing me to derive insights from complex datasets.</p>
+            </div>
+
+            <div class="about-container image-cont"> 
+                <img src="imgs/this-is-me.jpg" class="my-photo">
+                
+            </div>
+        </section>
+
+        <section class="content projects" id="projects">
+            <div class="project-cards">
+                <div class="card1">
+                    <h2>Projects</h2>
+   
+                </div>
+                <div class="card card2" onclick="openModal('modal2')">
+                    <h3><span><i class="fa-solid fa-wrench"></i></span> Under Construction</h3>
+                </div>
+                <div class="card card3" onclick="openModal('modal3')">
+                    <h3><span><i class="fa-solid fa-wrench"></i></span> Under Construction</h3>
+                </div>
+                <div class="card card4" onclick="openModal('modal4')">
+                    <h3>NaviCavi</h3>
+                    <p>Automated Caries Detection Web Application.</p>
+                </div>
+                <div class="card card5" onclick="openModal('modal5')">
+                    <h3><span><i class="fa-solid fa-wrench"></i></span> Under Construction</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="contacts xpadding" id="contacts">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or would like to connect, feel free to reach out!</p>
+        
+            <div class="contact-methods">
+                <h3>Connect with Me:</h3>
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="mailto:ellainedelacruz@proton.me" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/elliedel" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/elliedel" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/eidelellie" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="location">
+                <h3>Location</h3>
+                <p>Laguna, Philippines</p>
+            </div>
+        </section>        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ellaine Dela Cruz. All rights reserved.</p>
+    </footer>    
+
+    <!------------------------------------------ MODAL SECTION ------------------------------------------>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>NaviCavi</h2>
+            <p><strong>Overview:</strong> An automated caries detection web app developed as part of our thesis.</p>
+            <p class="ts"><strong>Technology Stack:</strong></p>
+            <ul>
+                <li>Computer Vision: YOLOv8 instance segmentation for caries detection and tooth type classification</li>
+                <li>Backend: Flask</li>
+                <li>Frontend: Bootstrap</li>
+                <li>Database: PostgreSQL</li>
+                <li>Hosting: Render</li>
+            </ul>
+            <p><i>I was responsible for the development of the web aplication, integrating the IS Models, ensuring the application was responsive and user-friendly, and the deployment of the system.</i></p>
+                
+            <div class="project-links">
+                <a href="https://navicavi.onrender.com" target="_blank" class="project-link">View Web App</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/projects.js"></script>
+</body>
+</html>

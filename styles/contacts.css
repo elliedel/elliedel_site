@@ -1,0 +1,50 @@
+.contacts {
+    padding: 20px 0;
+    text-align: center; /* Center the text in the contacts section */
+}
+
+.contacts h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.contact-methods ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+}
+
+.contact-methods li {
+    margin: 0 15px; /* Space between icons */
+}
+
+.contact-methods a {
+    display: flex;
+    align-items: center;
+    color: #5e6d37;
+    text-decoration: none;
+    font-size: 24px; /* Increase the icon size */
+}
+
+.contact-methods a:hover {
+    color: #4a5a2b; /* Hover effect for links */
+}
+
+.contact-methods h3 {
+    padding-bottom: 5px;
+}
+.location {
+    margin-top: 20px;
+    text-align: center; /* Center the location text */
+}

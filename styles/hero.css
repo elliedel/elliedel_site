@@ -1,0 +1,82 @@
+.hero {
+    height: 100vh !important;
+}
+.hero-container{
+    display: block;
+}
+.hi {
+    height: 40%;
+}
+.hi h2 {
+    width: 100%;
+    padding-top: 20%;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+.desc {
+    padding-top: 5%;
+    height: 60%;
+    width: 100%;    
+}
+.pdesc{
+    height: 90%;
+}
+.pdesc p {
+    padding-top: 3%;
+    float: none;
+    text-align: left;
+    font-size: 24px; 
+    width: 100%; 
+    line-height: normal;
+}
+.cta{
+    height: 10%;
+    text-align: left;
+    font-size: 24px; 
+    text-transform: uppercase;
+}
+
+/* styles for tablets and larger */
+@media (min-width: 768px) {
+    .hi h2 {
+        width: 60%;
+        font-size: 72px;
+    }
+    .pdesc p {
+        float: right;
+        text-align: right;
+        font-size: 30px; 
+        width: 48%;
+    }
+    .cta{
+        font-size: 28px; 
+    }
+}
+
+/* styles for desktops and larger */
+@media (min-width: 1024px) {
+    .hi h2 {
+        padding-top: 6%;
+        font-size: 102px;
+    }
+    .desc {
+        padding: 0;
+    }
+    .pdesc p {
+        font-size: 38px;
+    }
+    .cta{
+        font-size: 30px;
+    }
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+@keyframes slideIn {
+    100% {
+      transform: translateX(0);
+    }
+  }
